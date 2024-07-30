@@ -8,9 +8,24 @@ local tab2 = DrRayLibrary.newTab("Shop", "7734056813")
 local tab3 = DrRayLibrary.newTab("Player", "7734056813")
 
 tab.newLabel("Created Script Made By Cici")
-tab.newLabel("Version v1.9")
-tab.newLabel("Update Logs")
-tab.newLabel("Added Anti AFK Script")
+tab.newLabel("Version v2.0")
+tab.newLabel("Added Auto Skip Chest Tap")
+
+tab1.newToggle("Auto Skip Chest Tap", "", false, function(toggleState)
+    if toggleState then
+_G.skip = true
+while _G.skip == true do
+game:GetService("ReplicatedStorage").Assets.Remotes.Misc.FinishCase:FireServer()
+wait(0.1)
+end
+    else
+_G.skip = false
+while _G.skip == true do
+game:GetService("ReplicatedStorage").Assets.Remotes.Misc.FinishCase:FireServer()
+wait(0.1)
+end
+    end
+end)
 
 tab1.newToggle("Auto 1 Keys Win", "Easy Obby", false, function(toggleState)
     if toggleState then
