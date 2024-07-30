@@ -11,7 +11,7 @@ tab.newLabel("Created Script Made By Cici")
 tab.newLabel("Version v2.0")
 tab.newLabel("Added Auto Skip Chest Tap")
 
-tab1.newToggle("Auto Skip Chest Tap", "", false, function(toggleState)
+tab2.newToggle("Auto Skip Chest Tap", "", false, function(toggleState)
     if toggleState then
 _G.skip = true
 while _G.skip == true do
