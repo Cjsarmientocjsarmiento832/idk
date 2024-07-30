@@ -7,6 +7,7 @@ local tab1 = DrRayLibrary.newTab("Auto Keys Farm", "7733965118")
 local tab2 = DrRayLibrary.newTab("Shop", "7734056813")
 local tab3 = DrRayLibrary.newTab("Player", "7734056813")
 
+tab.newLabel("Created Script Made By Cici")
 tab.newLabel("Version v1.9")
 tab.newLabel("Update Logs")
 tab.newLabel("Added Anti AFK Script")
