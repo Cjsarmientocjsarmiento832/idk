@@ -228,7 +228,7 @@ tab1.newLabel("Skin Tone")
 tab1.newButton("Pastel yellow", "Fixed Color Gray Skin Tone Sorry", function()
     local args = {
     [1] = "skintone",
-    [2] = "Pastel Yellow"
+    [2] = "Pastel yellow"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
