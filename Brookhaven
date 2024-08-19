@@ -574,8 +574,6 @@ local args = {
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
 end)
 
-tab3.newLabel("Gear (Accessories)")
-
 local tab4 = DrRayLibrary.newTab("Animation", "ImageIdHere")
 
 tab4.newLabel("Idle Animation")
