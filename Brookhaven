@@ -1,2 +1,10 @@
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 local window = DrRayLibrary:Load("Yin Hub", "Default")
+
+local tab = DrRayLibrary.newTab("Yin Hub Logs", "ImageIdHere")
+tab.newLabel("Script Patched")
+tab.newLabel("Please Waiting Update Script Later")
+tab.newLabel("Credits ↓")
+tab.newLabel("Owner Hub Script Made By Cici")
+tab.newLabel("TikTok User arceusx_roblox123")
+tab.newLabel("Discord User yinpromlbb")
