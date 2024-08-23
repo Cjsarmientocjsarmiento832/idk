@@ -12,7 +12,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 })
 
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-local window = DrRayLibrary:Load("Yin Hub", "Default")
+local window = DrRayLibrary:Load("BrookHaven Rp🏡 (Yin Hub)", "Default")
 
 local tab = DrRayLibrary.newTab("Yin Hub Logs", "ImageIdHere")
 tab.newLabel("Script UnPatched")
