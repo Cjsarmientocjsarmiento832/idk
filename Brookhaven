@@ -19,6 +19,10 @@ tab.newLabel("Script UnPatched")
 tab.newLabel("Owner Hub Script Made By Cici")
 tab.newLabel("(Credits) TikTok User arceusx_roblox123")
 tab.newLabel("(Credits) Discord User yinpromlbb")
+tab.newButton("Yin Hub Community Discord", "Copy Link Discord Server", function()
+setclipboard(tostring("https://discord.com/invite/fDwKJZH9")) 
+end)
+
 
 local tab1 = DrRayLibrary.newTab("Avatar (Beta)", "ImageIdHere")
 tab1.newInput("Head ID", "", function(s)
@@ -214,4 +218,40 @@ tab1.newButton("Pastel yellow", "Fixed Again", function()
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+end)
+
+local tab2 = DrRayLibrary.newTab("Bundles (Beta)", "ImageIdHere")
+tab2.newLabel("Toros Only")
+tab2.newLabel("Pls Suggestion | Discord")
+
+tab2.newButton("Soon", "Character Name?", function()
+    print('Soon!')
+end)
+
+tab2.newLabel("Right Arm Only")
+tab2.newLabel("Pls Suggestion | Discord")
+
+tab2.newButton("Soon", "Character Name?", function()
+    print('Soon!')
+end)
+
+tab2.newLabel("Left Arm Only")
+tab2.newLabel("Pls Suggestion | Discord")
+
+tab2.newButton("Soon", "Character Name?", function()
+    print('Soon!')
+end)
+
+tab2.newLabel("Right Leg Only")
+tab2.newLabel("Pls Suggestion | Discord")
+
+tab2.newButton("Soon", "Character Name?", function()
+    print('Soon!')
+end)
+
+tab2.newLabel("Left Leg Only")
+tab2.newLabel("Pls Suggestion")
+
+tab2.newButton("Soon", "Character Name?", function()
+    print('Soon!')
 end)
