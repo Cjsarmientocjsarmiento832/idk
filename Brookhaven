@@ -219,3 +219,22 @@ tab1.newButton("Pastel yellow", "Fixed Again", function()
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
 end)
+
+local tab2 = DrRayLibrary.newTab("Bundles", "ImageIdHere")
+tab2.newLabel("🚹 Boy")
+tab2.newButton("Inf15 Thin", "Boy Body (U Need Small Or Long Body Real Avatar)", function()
+    local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 17873152058,
+        [2] = 17873151683,
+        [3] = 17873151726,
+        [4] = 17873151827,
+        [5] = 17873152017,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+end)
