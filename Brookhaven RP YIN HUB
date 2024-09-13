@@ -1,1 +1,311 @@
+local args = {
+    [1] = "RolePlayBio",
+    [2] = "\240\159\145\190 Yin Hub Member \240\159\145\190"
+}
 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Yin Hub",
+    Text = "ScriptBlox Follow Please User By Cici",
+    Duration = 10
+})
+
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Brookhaven Rp🏡",
+    SubTitle = "by (Yin Hub)",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(480, 310),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+})
+
+local Tabs = {
+    Credits = Window:AddTab({ Title = "YinHub Tab", Icon = "scroll" }),
+    Avatar = Window:AddTab({ Title = "Avatar Tab", Icon = "shirt" }),
+    Bundles = Window:AddTab({ Title = "Bundle Tab", Icon = "users" })
+}
+Tabs.Avatar:AddSection("Head ID (❓)/Yellow Pastel (🟡)")
+local Input = Tabs.Avatar:AddInput("Head ID (❓)", {
+        Title = "Head ID (❓)",
+        Default = "",
+        Placeholder = "ID",
+        Numeric = true, -- Only allows numbers
+        Finished = true, -- Only calls callback when you press enter
+        Callback = function(s)
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = s
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Loading",
+    Text = "Wait Please 1-10 Seconds",
+    Duration = 2
+})
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Done",
+    Text = "Successfully ✅",
+    Duration = 3
+})
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Pastel Yellow (🟡)",
+        Description = "",
+        Callback = function()
+local args = {
+    [1] = "skintone",
+    [2] = "Pastel yellow"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))                                                                                                                                              
+        end
+    })
+Tabs.Avatar:AddSection("Character Head (👤)")
+Tabs.Avatar:AddButton({
+        Title = "Headless Horseman (👤)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Headless Horseman",
+    Text = "Wait Please 1-10 Seconds",
+    Duration = 5
+})        
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Blaze Burner (👤)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 3210773801
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Blaze Burner",
+    Text = "Wait Please 1-10 Seconds",
+    Duration = 5
+})        
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Korblox DeathSpeaker (👤)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 16580493236
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Korblox DeathWalker",
+    Text = "Wait Please 1-10 Seconds",
+    Duration = 5
+})        
+        end
+    })
+Tabs.Avatar:AddSection("Classic Head (👥)")
+Tabs.Avatar:AddButton({
+        Title = "Cheeks Head (👥)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 746767604
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Strong Jaw (👥)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 616399508
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Narrow Head (👥)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 746774687
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Chiseled Head (👥)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 616387160
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Avatar:AddButton({
+        Title = "Paragon Head (👥)",
+        Description = "Working 🔨",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 616398268
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+    
+Tabs.Bundles:AddButton({
+        Title = "Inf15 Thin",
+        Description = "(Boy) U Need Body Avatar",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 17873152058,
+        [2] = 17873151683,
+        [3] = 17873151726,
+        [4] = 17873151827,
+        [5] = 17873152017,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Bundles:AddButton({
+        Title = "Blush Fashion Doll",
+        Description = "(Girl) Woman Arm/No Leg",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 96491916349570,
+        [2] = 86499698,
+        [3] = 86499716,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "Woman"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+
+Tabs.Credits:AddSection("Update Logs📜/Credit 💳")
+Tabs.Credits:AddParagraph({
+        Title = "Update Logs 📜",
+        Content = "Added Bundles\nNew Ui Library"
+    })
+Tabs.Credits:AddParagraph({
+        Title = "Credit 💳",
+        Content = "TikTok🎶 user: arceusx_roblox123\nDiscord💬 user: yinpromlbb"
+    })
