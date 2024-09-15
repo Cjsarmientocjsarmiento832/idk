@@ -159,7 +159,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     })
 Tabs.Avatar:AddSection("Classic Head (👥)")
 Tabs.Avatar:AddButton({
-        Title = "Classic Head (👥)",
+        Title = "Cheeks Head (👥)",
         Description = "Working 🔨",
         Callback = function()
 local args = {
