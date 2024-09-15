@@ -159,7 +159,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     })
 Tabs.Avatar:AddSection("Classic Head (👥)")
 Tabs.Avatar:AddButton({
-        Title = "Cheeks Head (👥)",
+        Title = "Classic Head (👥)",
         Description = "Working 🔨",
         Callback = function()
 local args = {
@@ -273,7 +273,7 @@ local args = {
         [5] = 17873152017,
         [6] = 1
     },
-    [3] = "Roblox20"
+    [3] = "YinHub"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
@@ -293,7 +293,67 @@ local args = {
         [5] = 1,
         [6] = 1
     },
-    [3] = "Woman"
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Bundles:AddButton({
+        Title = "Mini Plushie",
+        Description = "(Boy, Girl) U Need Small Body Ava",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14579958702,
+        [2] = 14579959062,
+        [3] = 14579959191,
+        [4] = 14579959249,
+        [5] = 14579963667,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Bundles:AddButton({
+        Title = "Chibi Doll Girl (White Torso)",
+        Description = "(Girl) U Need Body Ava",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14785351665,
+        [2] = 14785351711,
+        [3] = 14785351713,
+        [4] = 14785351880,
+        [5] = 14785351756,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+        end
+    })
+Tabs.Bundles:AddButton({
+        Title = "Chibi Doll Girl (Black Torso)",
+        Description = "(Girl) U Need Body Ava",
+        Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14775830263,
+        [2] = 14785351711,
+        [3] = 14785351713,
+        [4] = 14785351880,
+        [5] = 14785351756,
+        [6] = 1
+    },
+    [3] = "YinHub"
 }
 
 game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
