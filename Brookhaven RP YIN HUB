@@ -363,7 +363,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 Tabs.Credits:AddSection("Update Logs📜/Credit 💳")
 Tabs.Credits:AddParagraph({
         Title = "Update Logs 📜",
-        Content = "Added Bundles\nNew Ui Library"
+        Content = "(Bundles)\nAdded Mini Plushie\nAdded Chibi Doll Girl\nMore Soon!"
     })
 Tabs.Credits:AddParagraph({
         Title = "Credit 💳",
