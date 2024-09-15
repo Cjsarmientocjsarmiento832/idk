@@ -132,7 +132,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
         end
     })
 Tabs.Avatar:AddButton({
-        Title = "Korblox DeathSpeaker (👤)",
+        Title = "Korblox DeathWalker (👤)",
         Description = "Working 🔨",
         Callback = function()
 local args = {
