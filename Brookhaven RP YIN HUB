@@ -7,7 +7,7 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 wait(0.1)
 game:GetService("StarterGui"):SetCore("SendNotification", {
     Title = "Yin Hub",
-    Text = "ScriptBlox Follow Please User By Cici",
+    Text = "Please Follow FaceBook👤 user: Carl Jervin Sarmiento",
     Duration = 10
 })
 
@@ -424,9 +424,9 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):Fire
 Tabs.Credits:AddSection("Update Logs📜/Credit 💳")
 Tabs.Credits:AddParagraph({
         Title = "Update Logs 📜",
-        Content = "(Avatar)\nAdded Korblox Leg\n(Bundles)\nAdded Y2k Gal v2\nMore Soon!"
+        Content = "More Soon"
     })
 Tabs.Credits:AddParagraph({
         Title = "Credit 💳",
-        Content = "TikTok🎶 user: arceusx_roblox123\nDiscord💬 user: yinpromlbb"
+        Content = "TikTok🎶 user: arceusx_roblox123\nDiscord💬 user: yinpromlbb\nFaceBook👤 user: Carl Jervin Sarmiento"
     })
