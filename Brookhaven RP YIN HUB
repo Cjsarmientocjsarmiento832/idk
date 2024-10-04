@@ -1,430 +1,82 @@
-local args = {
-    [1] = "RolePlayBio",
-    [2] = "\240\159\145\190 Yin Hub Script Loading\240\159\145\190"
-}
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-wait(10)
-local args = {
-    [1] = "RolePlayBio",
-    [2] = "\240\159\145\190 Yin Hub Script Done\240\159\145\190"
-}
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-wait(5.0)
-local args = {
-    [1] = "RolePlayBio",
-    [2] = ""
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
-
-local Window = Fluent:CreateWindow({
-    Title = "Brookhaven Rp🏡",
-    SubTitle = "by (Yin Hub)",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(480, 310),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+local Window = OrionLib:MakeWindow({
+    Name = "👾 Yin Hub 👾",
+    HidePremium = false,
+    IntroText = "Yin Hub",
+    Draggable = true -- Make the window draggable
 })
 
-local Tabs = {
-    Credits = Window:AddTab({ Title = "YinHub Tab", Icon = "scroll" }),
-    Avatar = Window:AddTab({ Title = "Avatar Tab", Icon = "shirt" }),
-    Bundles = Window:AddTab({ Title = "Bundle Tab", Icon = "users" })
-}
-Tabs.Avatar:AddSection("Head ID (❓)/Yellow Pastel (🟡)")
-local Input = Tabs.Avatar:AddInput("Head ID (❓)", {
-        Title = "Head ID (❓)",
-        Default = "",
-        Placeholder = "ID",
-        Numeric = true, -- Only allows numbers
-        Finished = true, -- Only calls callback when you press enter
-        Callback = function(s)
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = s
-    },
-    [3] = "Roblox20"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-wait(0.1)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Loading",
-    Text = "Wait Please 1-10 Seconds",
-    Duration = 2
+local Tab = Window:MakeTab({
+    Name = "BrookHaven Rp🏡",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
 })
-wait(1)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Done",
-    Text = "Successfully ✅",
-    Duration = 3
+local Tab1 = Window:MakeTab({
+	Name = "Credits💳",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
-        end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Pastel Yellow (🟡)",
-        Description = "",
-        Callback = function()
-local args = {
-    [1] = "skintone",
-    [2] = "Pastel yellow"
-}
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))                                                                                                                                              
-        end
-    })
-Tabs.Avatar:AddSection("Character Head (👤)")
-Tabs.Avatar:AddButton({
-        Title = "Headless Horseman (👤)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 134082579
-    },
-    [3] = "Roblox20"
-}
+local ClockSection = Tab:AddSection({Name = "Brookhaven Rp🏡"})
+local ClockLabel = ClockSection:AddLabel("Time: Loading...")
+local function FormatTime()
+    local currentTime = os.date("*t")
+    local hour = currentTime.hour
+    local amPm = "AM"
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-wait(0.1)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Headless Horseman",
-    Text = "Wait Please 1-10 Seconds",
-    Duration = 5
-})        
+    if hour >= 12 then
+        amPm = "PM"
+        if hour > 12 then
+            hour = hour - 12
         end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Blaze Burner (👤)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 3210773801
-    },
-    [3] = "Roblox20"
-}
+    elseif hour == 0 then
+        hour = 12
+    end
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-wait(0.1)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Blaze Burner",
-    Text = "Wait Please 1-10 Seconds",
-    Duration = 5
-})        
-        end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Korblox DeathWalker (👤)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 16580493236
-    },
-    [3] = "Roblox20"
-}
+    local formattedTime = string.format("%02d:%02d:%02d %s", hour, currentTime.min, currentTime.sec, amPm)
+    local formattedDate = string.format("%02d/%02d/%04d", currentTime.day, currentTime.month, currentTime.year)
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-wait(0.1)
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "Korblox DeathWalker",
-    Text = "Wait Please 1-10 Seconds",
-    Duration = 5
-})        
-        end
-    })
-Tabs.Avatar:AddSection("Classic Head (👥)")
-Tabs.Avatar:AddButton({
-        Title = "Cheeks Head (👥)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 746767604
-    },
-    [3] = "Roblox20"
-}
+    return formattedDate .. " " .. formattedTime
+end
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Strong Jaw (👥)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 616399508
-    },
-    [3] = "Roblox20"
-}
+local function UpdateClock()
+    local hue = 0
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+    while true do
+        local startTime = tick()
+        
+        ClockLabel:Set("Date & Time: " .. FormatTime())
+        
+        hue = hue + 0.01
+        if hue > 1 then
+            hue = 0
         end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Narrow Head (👥)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 746774687
-    },
-    [3] = "Roblox20"
-}
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Chiseled Head (👥)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 616387160
-    },
-    [3] = "Roblox20"
-}
+        local color = Color3.fromHSV(hue, 1, 1)
+        ClockLabel.TextColor3 = color
+        
+        local elapsedTime = tick() - startTime
+        wait(1 - elapsedTime)
+    end
+end
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Paragon Head (👥)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 1,
-        [6] = 616398268
-    },
-    [3] = "Roblox20"
-}
+spawn(UpdateClock)
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Avatar:AddSection("Korblox Leg")
-Tabs.Avatar:AddButton({
-        Title = "Right Leg Korblox (🦵)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 139607718,
-        [5] = 1,
-        [6] = 1
-    },
-    [3] = "Roblox20"
-}
+Tab:AddParagraph("Update Logs📜","Soon")
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Avatar:AddButton({
-        Title = "Left Leg Korblox (🦵)",
-        Description = "Working 🔨",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 1,
-        [2] = 1,
-        [3] = 1,
-        [4] = 1,
-        [5] = 139607673,
-        [6] = 1
-    },
-    [3] = "Roblox20"
-}
+Tab:AddLabel("BrookHaven Rp🏡")
+Tab:AddButton({
+	Name = "Execute Script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/Ajg4UYMp"))()
+  	end    
+})
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-    
-Tabs.Bundles:AddButton({
-        Title = "Inf15 Thin",
-        Description = "(Boy) U Need Body Avatar",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 17873152058,
-        [2] = 17873151683,
-        [3] = 17873151726,
-        [4] = 17873151827,
-        [5] = 17873152017,
-        [6] = 1
-    },
-    [3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Bundles:AddButton({
-        Title = "Blush Fashion Doll",
-        Description = "(Girl) Woman Arm/No Leg",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 96491916349570,
-        [2] = 86499698,
-        [3] = 86499716,
-        [4] = 1,
-        [5] = 1,
-        [6] = 1
-    },
-    [3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Bundles:AddButton({
-        Title = "Mini Plushie",
-        Description = "(Boy, Girl) U Need Small Body Ava",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 14579958702,
-        [2] = 14579959062,
-        [3] = 14579959191,
-        [4] = 14579959249,
-        [5] = 14579963667,
-        [6] = 1
-    },
-    [3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Bundles:AddButton({
-        Title = "Chibi Doll Girl (White Torso)",
-        Description = "(Girl) U Need Body Ava",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 14785351665,
-        [2] = 14785351711,
-        [3] = 14785351713,
-        [4] = 14785351880,
-        [5] = 14785351756,
-        [6] = 1
-    },
-    [3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Bundles:AddButton({
-        Title = "Chibi Doll Girl (Black Torso)",
-        Description = "(Girl) U Need Body Ava",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 14775830263,
-        [2] = 14785351711,
-        [3] = 14785351713,
-        [4] = 14785351880,
-        [5] = 14785351756,
-        [6] = 1
-    },
-    [3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
-Tabs.Bundles:AddButton({
-        Title = "Y2K Gal v2 (Black Torso)",
-        Description = "(Girl) Don't forget to SCALE the avatar down in the avatar editor!",
-        Callback = function()
-local args = {
-    [1] = "CharacterChange",
-    [2] = {
-        [1] = 15539008532,
-        [2] = 15539008875,
-        [3] = 15539008680,
-        [4] = 15539008795,
-        [5] = 15539011945,
-        [6] = 1
-    },
-    [3] = "YinHub"
-}
-
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
-        end
-    })
+local CrSection = Tab1:AddSection({
+	Name = "Credits💳"
+})
+Tab1:AddLabel("TikTok🎶 User: arceusx_roblox123")
+Tab1:AddLabel("Discord💭 User: yinpromlbb")
+Tab1:AddLabel("FaceBook📱 User: Carl Jervin Sarmiento")
