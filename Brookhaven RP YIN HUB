@@ -71,8 +71,9 @@ Tab:AddButton({
 	Name = "Execute Script",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastebin.com/raw/Ajg4UYMp"))()
-                wait(0.5)
+                wait()
                 OrionLib:Destroy()
+                end
   	end    
 })
 
