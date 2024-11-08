@@ -2,7 +2,7 @@
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 
 local Window = OrionLib:MakeWindow({
-    Name = "👾 Yin Hub 👾",
+    Name = "👾 Yin Hub 👾 Update v1",
     HidePremium = false,
     IntroText = "Yin Hub",
     Draggable = true -- Make the window draggable
@@ -64,7 +64,7 @@ end
 
 spawn(UpdateClock)
 
-Tab:AddParagraph("Update Logs📜","Soon")
+Tab:AddParagraph("Update Logs📜","(Bundles Tab)\nAdded Mini Plushie (Gray Torso)\nAdded Blush Fashion Doll (Gray Torso)\n(Removed Tab)\nRemoved Mini Plushie (Black Torso)")
 
 Tab:AddLabel("BrookHaven Rp🏡")
 Tab:AddButton({
