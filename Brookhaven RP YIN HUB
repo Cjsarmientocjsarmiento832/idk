@@ -1,83 +1,418 @@
+local args = {
+    [1] = "RolePlayBio",
+    [2] = "\240\159\145\190 Yin Hub Script Loading\240\159\145\190"
+}
 
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+wait(9)
+local args = {
+    [1] = "RolePlayBio",
+    [2] = "\240\159\145\190 Yin Hub Script Done\240\159\145\190"
+}
 
-local Window = OrionLib:MakeWindow({
-    Name = "👾 Yin Hub 👾 Update v1",
-    HidePremium = false,
-    IntroText = "Yin Hub",
-    Draggable = true -- Make the window draggable
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+wait(5.0)
+local args = {
+    [1] = "RolePlayBio",
+    [2] = ""
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "BrookHaven Rp🏡 (Yin Hub v2) DISCONTINUED",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "BrookHaven Rp🏡 (👾 Yin Hub 👾)",
+   LoadingSubtitle = "by Cici",
+   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
 })
 
-local Tab = Window:MakeTab({
-    Name = "BrookHaven Rp🏡",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
+local Tab1 = Window:CreateTab("Head {C/C}", "smile")
+local Tab2 = Window:CreateTab("Bundle {Boy}", "circle-user-round")
+local Tab3 = Window:CreateTab("Bundle {Girl}", "circle-user")
+local Tab4 = Window:CreateTab("Custom", "badge-help")
+
+local Section = Tab1:CreateSection("Head {Classic}")
+local Button = Tab1:CreateButton({
+   Name = "Cheeks Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 746767604
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
 })
-local Tab1 = Window:MakeTab({
-	Name = "Credits💳",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Button = Tab1:CreateButton({
+   Name = "Strong Jaw Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 616399508
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "Narrow Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 746774687
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "Chiseled Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 616387160
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "Paragon Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 616398268
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Section = Tab1:CreateSection("Head {Character}")
+local Button = Tab1:CreateButton({
+   Name = "Korblox DeathWalker Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 16580493236
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "Blazeburner Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 3210773801
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab1:CreateButton({
+   Name = "Headless Head 👤",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 1,
+        [5] = 1,
+        [6] = 134082579
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
 })
 
-local ClockSection = Tab:AddSection({Name = "Brookhaven Rp🏡"})
-local ClockLabel = ClockSection:AddLabel("Time: Loading...")
-local function FormatTime()
-    local currentTime = os.date("*t")
-    local hour = currentTime.hour
-    local amPm = "AM"
+local Section = Tab2:CreateSection("Boy👦")
+local Button = Tab2:CreateButton({
+   Name = "Inf15 thin (Black)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 17873152058,
+        [2] = 17873151683,
+        [3] = 17873151726,
+        [4] = 17873151827,
+        [5] = 17873152017,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
 
-    if hour >= 12 then
-        amPm = "PM"
-        if hour > 12 then
-            hour = hour - 12
-        end
-    elseif hour == 0 then
-        hour = 12
-    end
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab2:CreateButton({
+   Name = "Inf15 thin (White)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 82491774691726,
+        [2] = 17873151683,
+        [3] = 17873151726,
+        [4] = 17873151827,
+        [5] = 17873152017,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
 
-    local formattedTime = string.format("%02d:%02d:%02d %s", hour, currentTime.min, currentTime.sec, amPm)
-    local formattedDate = string.format("%02d/%02d/%04d", currentTime.day, currentTime.month, currentTime.year)
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab2:CreateButton({
+   Name = "Mini Plushie (Boy/Girl)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 18865136555,
+        [2] = 14579959062,
+        [3] = 14579959191,
+        [4] = 14579959249,
+        [5] = 14579963667,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
 
-    return formattedDate .. " " .. formattedTime
-end
-
-local function UpdateClock()
-    local hue = 0
-
-    while true do
-        local startTime = tick()
-        
-        ClockLabel:Set("Date & Time: " .. FormatTime())
-        
-        hue = hue + 0.01
-        if hue > 1 then
-            hue = 0
-        end
-
-        local color = Color3.fromHSV(hue, 1, 1)
-        ClockLabel.TextColor3 = color
-        
-        local elapsedTime = tick() - startTime
-        wait(1 - elapsedTime)
-    end
-end
-
-spawn(UpdateClock)
-
-Tab:AddParagraph("Update Logs📜","(Bundles Tab)\nAdded Mini Plushie (Gray Torso)\nAdded Blush Fashion Doll (Gray Torso)\n(Removed Tab)\nRemoved Mini Plushie (Black Torso)")
-
-Tab:AddLabel("BrookHaven Rp🏡")
-Tab:AddButton({
-	Name = "Execute Script",
-	Callback = function()
-                OrionLib:Destroy()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/Ajg4UYMp"))()
-  	end    
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
 })
 
-local CrSection = Tab1:AddSection({
-	Name = "Credits💳"
+local Section = Tab3:CreateSection("Girl👩")
+local Button = Tab3:CreateButton({
+   Name = "Blush Fashion Doll (Gray Torso)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 15599926323,
+        [2] = 15599926845,
+        [3] = 15599926809,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
 })
-Tab1:AddLabel("TikTok🎶 User: arceusx_roblox123")
-Tab1:AddLabel("Discord💭 User: yinpromlbb")
-Tab1:AddLabel("FaceBook📱 User: Carl Jervin Sarmiento")
+local Button = Tab3:CreateButton({
+   Name = "Blush Fashion Doll (Black Torso)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 96491916349570,
+        [2] = 86499698,
+        [3] = 86499716,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab3:CreateButton({
+   Name = "Mini Plushie (Girl/Boy)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 18865136555,
+        [2] = 14579959062,
+        [3] = 14579959191,
+        [4] = 14579959249,
+        [5] = 14579963667,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab3:CreateButton({
+   Name = "Chibi Doll Girl v2 (White)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14854317552,
+        [2] = 14785351711,
+        [3] = 14785351713,
+        [4] = 14785351880,
+        [5] = 14785351756,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+local Button = Tab3:CreateButton({
+   Name = "Chibi Doll Girl v2 (Black)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 14854350553,
+        [2] = 14785351711,
+        [3] = 14785351713,
+        [4] = 14785351880,
+        [5] = 14785351756,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+  end,
+})
+
+local Section = Tab4:CreateSection("Custom Leg/Arm")
+local Button = Tab4:CreateButton({
+   Name = "Blocky Girl V3 (Leg)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 14842193436,
+        [5] = 14842193136,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab4:CreateButton({
+   Name = "Korblox DeathSpeaker (Right Leg)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 1,
+        [3] = 1,
+        [4] = 139607718,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab4:CreateButton({
+   Name = "Woman (Arm)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 86499698,
+        [3] = 86499716,
+        [4] = 1,
+        [5] = 1,
+        [6] = 1
+    },
+    [3] = "YinHub"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab4:CreateButton({
+   Name = "Pastel Yellow (Skin Tone)",
+   Callback = function()
+local args = {
+    [1] = "skintone",
+    [2] = "Pastel yellow"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+   end,
+}) 😺
