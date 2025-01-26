@@ -21,9 +21,9 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServ
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "BrookHaven Rp🏡 (Yin Hub v2) DISCONTINUED",
+   Name = "BrookHaven Rp🏡 (Yin Hub v2)",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "BrookHaven Rp🏡 (👾 Yin Hub 👾)",
+   LoadingTitle = "BrookHaven Rp🏡",
    LoadingSubtitle = "by Cici",
    Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
