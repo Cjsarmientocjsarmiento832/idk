@@ -1,32 +1,5 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Alya Hub (Brookhaven Rp🏡) by Cici",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Alya Hub",
-   LoadingSubtitle = "by Cici/ArceusX_Roblox123",
-   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
-
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
-
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "AlyaHubPro"
-   },
-})
-
-Rayfield:Notify({
-   Title = "Alya Hub",
-   Content = "Thank You For Using Alya Hub (Brookhaven RP",
-   Duration = 10,
-   Image = 131090741681210,
-})
-
----TabsHome---
-local TabHome = Window:CreateTab("Home🏠", 131090741681210) -- Title, Image
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({
    Name = "Alya Hub (Brookhaven Rp🏡)",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Alya Hub",
@@ -54,6 +27,7 @@ Rayfield:Notify({
 local TabHome = Window:CreateTab("Home🏠", 131090741681210) -- Title, Image
 local Label = TabHome:CreateLabel("Welcome To The Alya Hub Scripter", 73798727737509, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 local Label = TabHome:CreateLabel("Status Script (🟢)", 119337150944005, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = TabHome:CreateLabel("Check Owner Script its real Renzo.", 89607561323004, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 local Paragraph = TabHome:CreateParagraph({Title = "Credits", Content = "Tiktok - @arceusx_roblox123"})
 
 
