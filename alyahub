@@ -1,3 +1,4 @@
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Alya Hub (Brookhaven Rp🏡)",
@@ -28,14 +29,16 @@ local TabHome = Window:CreateTab("Home🏠", 131090741681210) -- Title, Image
 local Label = TabHome:CreateLabel("Welcome To The Alya Hub Scripter", 73798727737509, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 local Label = TabHome:CreateLabel("Status Script (🟢)", 119337150944005, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 local Label = TabHome:CreateLabel("Check Owner Script its real Renzo.", 89607561323004, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = TabHome:CreateLabel("Check Friend its real Rhyle.", 115047744833644, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 local Paragraph = TabHome:CreateParagraph({Title = "Credits", Content = "Tiktok - @arceusx_roblox123"})
 
 
 ---Tabs BrookhavenRp---
-local Tab1 = Window:CreateTab("Avatar", 131090741681210) -- Title, Image
+local Tab1 = Window:CreateTab("Heads", 131090741681210) -- Title, Image
 local Tab2 = Window:CreateTab("Girl Bundle", 131090741681210) -- Title, Image
 local Tab3 = Window:CreateTab("Boy Bundle", 131090741681210) -- Title, Image
 local Tab4 = Window:CreateTab("Custom", 131090741681210) -- Title, Image
+local Tab5 = Window:CreateTab("LocalPLayer", 131090741681210) -- Title, Image
 
 ---Tabs 1 Classic Heads---
 local Label = Tab1:CreateLabel("Classic Heads", 76356016034708, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
@@ -585,5 +588,29 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+
+--Tab 5 localplayer--
+local Slider = Tab5:CreateSlider({
+   Name = "WalkSpeed",
+   Range = {16, 1000},
+   Increment = 1,
+   Suffix = "",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+   end,
+})
+local Slider = Tab5:CreateSlider({
+   Name = "JumpPower",
+   Range = {25, 1000},
+   Increment = 1,
+   Suffix = "",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
    end,
 })
