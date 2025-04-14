@@ -27,9 +27,7 @@ Rayfield:Notify({
 ---TabsHome---
 local TabHome = Window:CreateTab("Home🏠", 131090741681210) -- Title, Image
 local Label = TabHome:CreateLabel("Welcome To The Alya Hub Scripter", 73798727737509, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
-local Label = TabHome:CreateLabel("Status Script (🟢)", 119337150944005, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
-local Label = TabHome:CreateLabel("Check Owner Script its real Renzo.", 89607561323004, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
-local Label = TabHome:CreateLabel("Check Friend its real Rhyle.", 115047744833644, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+local Label = TabHome:CreateLabel("Status Script (🟢)", 119337150944005, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreThemeassas
 local Paragraph = TabHome:CreateParagraph({Title = "Credits", Content = "Tiktok - @arceusx_roblox123"})
 
 
@@ -365,8 +363,8 @@ local args = {
         [1] = 14579958702,
         [2] = 14583777042,
         [3] = 14583777007,
-        [4] = 14583776823,
-        [5] = 14583776741,
+        [4] = 14579959249,
+        [5] = 14579963667,
         [6] = 1
     },
     [3] = "Roblox20"
@@ -405,8 +403,8 @@ local args = {
         [1] = 14579958702,
         [2] = 14583777042,
         [3] = 14583777007,
-        [4] = 14583776823,
-        [5] = 14583776741,
+        [4] = 14579959249,
+        [5] = 14579963667,
         [6] = 1
     },
     [3] = "Roblox20"
@@ -582,6 +580,25 @@ local args = {
         [3] = 1,
         [4] = 14755622570,
         [5] = 14755622524,
+        [6] = 1
+    },
+    [3] = "Roblox20"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+   end,
+})
+local Button = Tab4:CreateButton({
+   Name = "Woman (Arm)",
+   Callback = function()
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 1,
+        [2] = 86499698,
+        [3] = 86499716,
+        [4] = 1,
+        [5] = 1,
         [6] = 1
     },
     [3] = "Roblox20"
