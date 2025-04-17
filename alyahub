@@ -36,7 +36,7 @@ local Paragraph = TabHome:CreateParagraph({Title = "Update Logs", Content = "Fix
 local Tab1 = Window:CreateTab("Heads", 131090741681210) -- Title, Image
 local Tab2 = Window:CreateTab("Girl Bundle", 131090741681210) -- Title, Image
 local Tab3 = Window:CreateTab("Boy Bundle", 131090741681210) -- Title, Image
-local Tab4 = Window:CreateTab("Custom", 131090741681210) -- Title, Image
+local Tab4 = Window:CreateTab("Custom (Wait Fix!)", 131090741681210) -- Title, Image
 local Tab5 = Window:CreateTab("LocalPLayer", 131090741681210) -- Title, Image
 
 ---Tabs 1 Classic Heads---
