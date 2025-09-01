@@ -1,40 +1,81 @@
+local Version = "1.6.41"
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/download/" .. Version .. "/main.lua"))()
 
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({
-   Name = "Alya Hub (Brookhaven Rp🏡)",
-   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Alya Hub",
-   LoadingSubtitle = "by Cici/ArceusX_Roblox123",
-   Theme = "DarkBlue", -- Check https://docs.sirius.menu/rayfield/configuration/themes
-
-   DisableRayfieldPrompts = false,
-   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
-
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "AlyaHubPro"
-   },
+local Window = WindUI:CreateWindow({
+    Title = "Brookhaven Rp🏡 | Alya Hub",
+    Icon = "door-open",
+    Author = "By xnm504 [Roblox User]",
+    Folder = "AlyaHub",
 })
 
-Rayfield:Notify({
-   Title = "Alya Hub",
-   Content = "Thank You For Using Alya Hub (Brookhaven RP",
-   Duration = 10,
-   Image = 131090741681210,
+local Tab = Window:Tab({
+    Title = "Bundles [Full Body Without Head]",
+    Icon = "bird",
+    Locked = false,
 })
 
----TabsHome---
-local TabHome = Window:CreateTab("Home🏠", 131090741681210) -- Title, Image
-local Label = TabHome:CreateLabel("Welcome To The Alya Hub Scripter", 73798727737509, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
-local Label = TabHome:CreateLabel("Status Script (🟡) (Working (Issue)", 119337150944005, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreThemeassas
-local Paragraph = TabHome:CreateParagraph({Title = "Credits", Content = "Tiktok - @arceusx_roblox123"})
-local Paragraph = TabHome:CreateParagraph({Title = "Update Logs", Content = "Fix Heads/GirlBundle/BoyBundle/Custom Not Working!!!"})
+local Button = Tab:Button({
+    Title = "Zepeto [Boy]",
+    Desc = "Indonesia 🇮🇩",
+    Locked = false,
+    Callback = function()
+        local args = {
+    [1] = {
+        [1] = 123916977258376,
+        [2] = 121397669380873,
+        [3] = 116229930426772,
+        [4] = 103224430842613,
+        [5] = 92565592431265,
+        [6] = 0
+    }
+}
 
+game:GetService("ReplicatedStorage").Remotes.ChangeCharacterBody:InvokeServer(unpack(args))
+    end
+})
+local Button = Tab:Button({
+    Title = "Zepeto [Girl]",
+    Desc = "Philippines 🇵🇭",
+    Locked = false,
+    Callback = function()
+        local args = {
+    [1] = {
+        [1] = 115745153758680,
+        [2] = 76683091422509,
+        [3] = 75159926897589,
+        [4] = 80766960128463,
+        [5] = 90734460351120,
+        [6] = 0
+    }
+}
 
----Tabs BrookhavenRp---
-local Tab1 = Window:CreateTab("Heads", 131090741681210) -- Title, Image
-local Tab2 = Window:CreateTab("Girl Bundle", 131090741681210) -- Title, Image
+game:GetService("ReplicatedStorage").Remotes.ChangeCharacterBody:InvokeServer(unpack(args))
+    end
+})
+local Button = Tab:Button({
+    Title = "Zepeto [Girl]",
+    Desc = "Indonesia 🇮🇩",
+    Locked = false,
+    Callback = function()
+        local args = {
+    [1] = {
+        [1] = 13174811436488,
+        [2] = 135594569190015,
+        [3] = 109067870029660,
+        [4] = 123554824904996,
+        [5] = 117665557381131,
+        [6] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ChangeCharacterBody:InvokeServer(unpack(args))
+    end
+})
+local Tab = Window:Tab({
+    Title = "Other Script",
+    Icon = "bird",
+    Locked = false,
+})local Tab2 = Window:CreateTab("Girl Bundle", 131090741681210) -- Title, Image
 local Tab3 = Window:CreateTab("Boy Bundle", 131090741681210) -- Title, Image
 local Tab4 = Window:CreateTab("Custom (Wait Fix!)", 131090741681210) -- Title, Image
 local Tab5 = Window:CreateTab("LocalPLayer", 131090741681210) -- Title, Image
